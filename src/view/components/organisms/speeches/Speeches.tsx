@@ -33,7 +33,13 @@ const Speeches = () => {
 			<CategoryHeader title="Public Talks" id="talks" number={2} />
 			<div className={styles.content}>
 				<div className={styles.videoWrapper}>
-					<video autoPlay={true} muted={true} loop={true} id="myVideo">
+					<video
+						playsInline={true}
+						autoPlay={true}
+						muted={true}
+						loop={true}
+						id="myVideo"
+					>
 						<source src="/speech.mp4" type="video/mp4" />
 					</video>
 				</div>
