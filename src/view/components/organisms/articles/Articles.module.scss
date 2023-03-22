@@ -1,0 +1,29 @@
+.root {
+  display: grid;
+  grid-template-rows: max-content max-content;
+  grid-template-columns: 1fr;
+  margin-bottom: 140px;
+  grid-gap: 60px;
+
+  .articlesGrid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+  }
+
+  @media (max-width: 1280px) {
+    .articlesGrid {
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-gap: 16px;
+    margin-bottom: 40px;
+
+    .articlesGrid {
+      grid-gap: 32px 0;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: max-content max-content;
+    }
+  }
+}
