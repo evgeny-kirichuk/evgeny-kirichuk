@@ -34,7 +34,7 @@ const Speeches = () => {
 			<div className={styles.content}>
 				<div className={styles.videoWrapper}>
 					<video autoPlay={true} muted={true} loop={true} id="myVideo">
-						<source src="/speech.MP4" type="video/mp4" />
+						<source src="/speech.mp4" type="video/mp4" />
 					</video>
 				</div>
 				<div className={styles.talks}>
