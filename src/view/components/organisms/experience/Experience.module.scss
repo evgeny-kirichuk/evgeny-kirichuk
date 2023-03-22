@@ -1,0 +1,239 @@
+.root {
+  display: grid;
+  grid-template-rows: max-content max-content;
+  grid-template-columns: 1fr;
+  grid-gap: 60px;
+  margin-bottom: 140px;
+
+  .contentGrid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: max-content;
+    margin-top: 64px;
+
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content;
+      grid-gap: 28px;
+
+      height: max-content;
+      position: sticky;
+      top: 16px;
+
+      span {
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      span:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+
+    .jobs {
+      display: grid;
+      grid-template-rows: max-content;
+      grid-template-columns: 1fr 3fr;
+      padding-top: 130px;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+
+      .companies {
+        grid-column-end: span 3;
+        display: grid;
+        grid-auto-flow: row;
+        grid-auto-rows: max-content;
+
+        .company {
+          display: grid;
+          grid-template-columns: 2fr 2fr 1fr 1fr;
+          grid-template-rows: max-content max-content;
+          grid-gap: 22px 0;
+          padding: 16px 0;
+          box-sizing: border-box;
+
+          .dates {
+          }
+
+          .jobTitle {
+          }
+
+          .companyName {
+            justify-self: start;
+          }
+
+          .location {
+            justify-self: end;
+          }
+
+          .bullets {
+            grid-column-start: 2;
+            grid-column-end: span 3;
+
+            span {
+              display: block;
+              margin-bottom: 8px;
+            }
+
+            .bullet {
+              display: grid;
+              grid-template-columns: max-content 1fr;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    margin-bottom: 80px;
+    .contentGrid {
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content max-content;
+      grid-gap: 30px;
+      margin-top: 20px;
+
+      .skills {
+        position: unset;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content;
+        grid-gap: 0;
+
+        span {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      .jobs {
+        grid-template-columns: 1fr;
+        padding-top: 0;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+
+        .companies {
+          .company {
+            grid-template-columns: repeat(4, 1fr);
+
+            .companyName {
+              justify-self: end;
+            }
+
+            .location {
+              justify-self: end;
+            }
+          }
+        }
+      }
+
+      .skills {
+        position: unset;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-gap: 16px;
+    margin-bottom: 40px;
+    .contentGrid {
+      margin-top: 10px;
+      grid-gap: 28px;
+
+      .skills {
+        position: unset;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content;
+        justify-content: space-between;
+        grid-gap: 0;
+
+        span {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+        }
+        span:not(:last-child) {
+          margin-bottom: 6px;
+        }
+      }
+
+      .jobs {
+        grid-template-columns: 1fr;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+
+        .companies {
+          .company {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 6px;
+            padding: 28px 0;
+
+            .bullets {
+              margin-top:8px;
+              grid-column-start: unset;
+              grid-column-end: unset;
+            }
+
+            .dates {
+              grid-row-start: 3;
+              grid-column-start: 2;
+              justify-self: end;
+            }
+
+            .jobTitle {
+              grid-column-start: 1;
+              grid-row-start: 1;
+              padding-bottom: 12px;
+            }
+
+            .companyName {
+              grid-column-start: 1;
+              justify-self: start;
+            }
+
+            .location {
+              grid-column-start: 1;
+              grid-row-start: 3;
+              justify-self: start;
+            }
+
+            .bullets {
+              grid-row-start: 4;
+              grid-column-end: span 2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    .contentGrid {
+
+      .skills {
+        grid-template-columns: max-content max-content;
+        justify-content: space-between;
+      }
+    }
+  }
+}

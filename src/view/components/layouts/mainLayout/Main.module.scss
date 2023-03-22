@@ -1,0 +1,8 @@
+.mainWrapper {
+	background: var(--color-background-main);
+	width: 100%;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 100%;
+}
