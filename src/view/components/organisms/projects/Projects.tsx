@@ -21,10 +21,10 @@ const projects: IProject[] = [
 	{
 		title: 'Mopla',
 		kind: 'Public Transport App',
-		link: '',
+		link: 'https://www.mopla.solutions',
 		description: 'Uber-like application for public transport is Germany',
 		position: 'Team Lead Front-end Engineer',
-		isReady: false,
+		isReady: true,
 	},
 	{
 		title: 'Work4All',

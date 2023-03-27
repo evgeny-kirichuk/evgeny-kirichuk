@@ -12,7 +12,7 @@ const About = () => {
 			<div className={styles.root}>
 				<div className={styles.nameWrapper}>
 					<span className={styles.hello}>
-						Hello, <br /> I am
+						Hello, <br /> I am&nbsp;
 					</span>
 					<span className={styles.name}>Evgeny</span>
 				</div>

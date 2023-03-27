@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
 						<span className={styles.js}>Public Talks</span>
 					</a>
 					<a className="cursor-scale small" href="#articles">
-						<span className={styles.js}>Last Articles</span>
+						<span className={styles.js}>Articles</span>
 					</a>
 					<a className="cursor-scale small" href="#contacts">
 						<span className={styles.js}>Contacts</span>
