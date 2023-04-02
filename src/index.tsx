@@ -8,7 +8,6 @@ import {
 	unregisterServiceWorker,
 } from './serviceWorkerRegistration.js';
 
-import './i18n';
 import './index.scss';
 
 const rootNode = document.getElementById('root');
