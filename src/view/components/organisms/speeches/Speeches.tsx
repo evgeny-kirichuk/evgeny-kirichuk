@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import cs from 'classnames';
@@ -15,10 +15,15 @@ const squareVariants = {
 const Speeches = () => {
 	const controls = useAnimation();
 	const [ref, inView] = useInView({ threshold: 0.3 });
-
+	const videoRef = useRef<HTMLVideoElement>(null);
 	useEffect(() => {
 		if (inView) {
 			controls.start('visible');
+
+			if (videoRef.current) {
+				videoRef.current.load();
+				videoRef.current.play();
+			}
 		}
 	}, [controls, inView]);
 
@@ -34,10 +39,13 @@ const Speeches = () => {
 			<div className={styles.content}>
 				<div className={styles.videoWrapper}>
 					<video
+						ref={videoRef}
 						playsInline={true}
-						autoPlay={true}
+						autoPlay={false}
 						muted={true}
 						loop={true}
+						preload="none"
+						poster="/avatar.jpg"
 						id="myVideo"
 					>
 						<source src="/speech.mp4" type="video/mp4" />
