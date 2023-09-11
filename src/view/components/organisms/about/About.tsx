@@ -19,8 +19,7 @@ const About = () => {
 
 				<span className={styles.surname}>Kirichuk</span>
 				<span className={styles.description}>
-					Full-stack developer with 7+ years experience, focusing in JavaScript{' '}
-					front-end, back-end, and infrastructure development.
+					Full-stack developer, Solutions architect, Team lead.
 				</span>
 			</div>
 		</motion.div>

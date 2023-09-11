@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import cs from 'classnames';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -13,6 +14,7 @@ interface IJob {
 	location: string;
 	dates: string;
 	responsibilities: string[];
+	link: string;
 }
 
 const jobs: IJob[] = [
@@ -27,6 +29,7 @@ const jobs: IJob[] = [
 			'Partnered with back-end team lead for the design and construction of a product PostgreSQL database.',
 			'Reduced application load time by 200% using webpack code splitting, service worker, and requests/sources caching mechanisms.',
 		],
+		link: 'https://andersenlab.com/',
 	},
 	{
 		jobTitle: 'Full-stack Developer',
@@ -39,6 +42,7 @@ const jobs: IJob[] = [
 			'Worked in open-core software development with 10 teams using LeSS framework.',
 			'Released 3 facebook games using JavaScript game engines in 9 month.',
 		],
+		link: 'https://1pt.com',
 	},
 	{
 		jobTitle: 'Front-end Engineer',
@@ -51,6 +55,7 @@ const jobs: IJob[] = [
 			'Increased product tests coverage by 10% and components reliability by by moving helper functions into common utilities.',
 			'Increased a product accessibility from keyboard and screen readers using HTML semantic best practices.',
 		],
+		link: 'https://www.yumasoft.com/index.html#_section',
 	},
 ];
 
@@ -83,25 +88,26 @@ const Experience = () => {
 				cta="Linkedin"
 				icon="&rarr;"
 				id="experience"
-				number={0}
+				number={4}
 			/>
 			<div className={styles.contentGrid}>
 				<div className={styles.skills}>
 					<div>
 						<span>JavaScript (TypeScript)</span>
-						<span>React (Webpack, Next.js)</span>
-						<span>HTML/CSS</span>
-						<span>Node.js (Express, Nest)</span>
+						<span>React (Next.js, Webpack, Vite)</span>
+						<span>HTML/CSS (Tailwind, SCSS, Styled)</span>
+						<span>Node.js (Nest.js, Express)</span>
+						<span>Cloud (AWS, Vercel)</span>
+						<span>PostgreSQL (Prisma, Sequelize)</span>
+						<span>MongoDB (Mongoose)</span>
+						<span>CI/CD</span>
 						<span>Swagger</span>
 						<span>Docker</span>
-						<span>AWS</span>
-						<span>PostgreSQL</span>
-						<span>MongoDB</span>
 					</div>
 					<div>
 						<span>Team leading</span>
-						<span>Team load planning</span>
 						<span>Code review</span>
+						<span>Team load planning</span>
 						<span>Mentoring</span>
 					</div>
 				</div>
@@ -113,7 +119,14 @@ const Experience = () => {
 								<div key={job.companyName} className={styles.company}>
 									<span className={styles.dates}>{job.dates}</span>
 									<span className={styles.jobTitle}>{job.jobTitle}</span>
-									<span className={styles.companyName}>{job.companyName}</span>
+									<a
+										href={job.link}
+										target="_blank"
+										className={cs(styles.companyName, 'cursor-scale small')}
+										rel="noreferrer"
+									>
+										{job.companyName}
+									</a>
 									<span className={styles.location}>{job.location}</span>
 
 									<div className={styles.bullets}>

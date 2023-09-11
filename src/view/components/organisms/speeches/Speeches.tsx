@@ -35,7 +35,7 @@ const Speeches = () => {
 			variants={squareVariants}
 			className={styles.root}
 		>
-			<CategoryHeader title="Public Talks" id="talks" number={2} />
+			<CategoryHeader title="Public Talks" id="talks" number={1} />
 			<div className={styles.content}>
 				<div className={styles.videoWrapper}>
 					<video

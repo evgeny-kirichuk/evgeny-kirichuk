@@ -96,7 +96,7 @@ const Projects = () => {
 			variants={squareVariants}
 			className={styles.root}
 		>
-			<CategoryHeader title="Selected Works" id="works" number={1} />
+			<CategoryHeader title="Selected Works" id="works" number={3} />
 			<div className={styles.projectsGrid}>
 				{projects.map((p, i) => (
 					<React.Fragment key={p.title}>
