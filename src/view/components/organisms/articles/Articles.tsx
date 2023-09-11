@@ -74,7 +74,7 @@ const Articles = () => {
 				cta="Medium"
 				icon="&rarr;"
 				id="articles"
-				number={3}
+				number={2}
 			/>
 			<div className={styles.articlesGrid}>
 				{articles.map((a) => (

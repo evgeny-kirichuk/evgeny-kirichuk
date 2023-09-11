@@ -13,7 +13,7 @@ body {
 	cursor: none;
 }
 
-.cursor{
+.cursor {
 	background: var(--color-primary-dark-reverse);
 	mix-blend-mode: exclusion;
 	position: fixed;
@@ -22,15 +22,16 @@ body {
 	margin-left: -10px;
 	margin-top: -10px;
 	border-radius: 50%;
-	transition: transform .3s ease;
+	transition: transform 0.3s ease;
 	transform-origin: center center;
 	pointer-events: none;
 	z-index: 1000;
 }
 
-.grow, .grow-small{
+.grow,
+.grow-small {
 	transform: scale(10);
 }
-.grow-small{
+.grow-small {
 	transform: scale(3);
 }

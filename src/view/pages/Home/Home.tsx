@@ -8,6 +8,7 @@ import Experience from '~organisms/experience/Experience';
 import Speeches from '~organisms/speeches/Speeches';
 import Contacts from '~organisms/contacts/Contacts';
 import { Header } from '~organisms/header/Header';
+import Certificates from '~/view/components/organisms/certificates/Certificates';
 
 import styles from './Home.module.scss';
 
@@ -49,6 +50,18 @@ const Home = () => {
 				}
 			});
 		});
+
+		const currentLocation = window.location.href;
+		const hasCommentAnchor = currentLocation.includes('/#');
+		if (hasCommentAnchor) {
+			const anchorCommentId = `${currentLocation.substring(
+				currentLocation.indexOf('#') + 1
+			)}`;
+			const anchorComment = document.getElementById(anchorCommentId);
+			if (anchorComment) {
+				anchorComment.scrollIntoView({ behavior: 'smooth' });
+			}
+		}
 	}, []);
 
 	return (
@@ -56,10 +69,11 @@ const Home = () => {
 			{navigator.maxTouchPoints <= 1 ? <div className="cursor"></div> : null}
 			<Header />
 			<About />
-			<Experience />
-			<Projects />
+			<Certificates />
 			<Speeches />
 			<Articles />
+			<Projects />
+			<Experience />
 			<Contacts />
 			{/*<div className={styles.l1} />*/}
 			{/*<div className={styles.l2} />*/}

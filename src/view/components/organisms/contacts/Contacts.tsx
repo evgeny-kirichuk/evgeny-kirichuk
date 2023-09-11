@@ -64,7 +64,7 @@ const Contacts = () => {
 					</>
 				}
 				id="contacts"
-				number={4}
+				number={5}
 			>
 				<div className={styles.content}>
 					<img src="/avatar.jpg" alt="avatar" />
