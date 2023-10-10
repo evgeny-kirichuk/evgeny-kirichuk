@@ -8,11 +8,12 @@ import CategoryHeader from '~molecules/categoryHeader/CategoryHeader';
 import styles from './Contacts.module.scss';
 
 const contacts = [
-	{
-		name: 'View CV',
-		link: '/Kirichuk_Fullstack_CV.pdf',
-		icon: true,
-	},
+	// TODO: actualize CV and then add it here
+	// {
+	// 	name: 'View CV',
+	// 	link: '/Kirichuk_Fullstack_CV.pdf',
+	// 	icon: true,
+	// },
 	{
 		name: 'evgeny@kirichuk.me',
 		link: 'mailto:evgeny@kirichuk.me',

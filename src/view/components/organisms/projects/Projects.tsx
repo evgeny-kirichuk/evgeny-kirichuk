@@ -13,17 +13,24 @@ interface IProject {
 	kind: string;
 	link: string;
 	isReady: boolean;
-	description: string;
+	description?: string;
 	position: string;
 }
 
 const projects: IProject[] = [
 	{
+		title: 'ScyllaDB Cloud',
+		kind: 'Database-as-a-Service Platform',
+		link: 'https://www.scylladb.com/product/scylla-cloud/',
+		position: 'Product Engineer',
+		isReady: true,
+	},
+	{
 		title: 'Mopla',
 		kind: 'Public Transport App',
 		link: 'https://www.mopla.solutions',
 		description: 'Uber-like application for public transport is Germany',
-		position: 'Team Lead Front-end Engineer',
+		position: 'Team Lead Product Engineer',
 		isReady: true,
 	},
 	{
@@ -32,7 +39,7 @@ const projects: IProject[] = [
 		link: 'https://work4all.de',
 		description:
 			'work4all is the multiple award-winning all-in-one software that combines commercial functions, filing of communication and documents, and project management. ',
-		position: 'Product Developer, Front-end Engineer',
+		position: 'Product Engineer',
 		isReady: true,
 	},
 	{
@@ -50,7 +57,7 @@ const projects: IProject[] = [
 		link: 'https://www.taotesting.com/',
 		description:
 			'Open Assessment Technologies is a community driving a global movement of people using assessments as a force for good. The values and aspirations of our team are embedded in what we do.',
-		position: 'Product Developer, Front-end Engineer',
+		position: 'Front-end Engineer',
 		isReady: true,
 	},
 	{
@@ -59,7 +66,7 @@ const projects: IProject[] = [
 		link: 'https://www.yumapos.co.uk/',
 		description:
 			'An all‑in‑one cloud‑based EPOS system optimised for hospitality',
-		position: 'Product Developer, Front-end Engineer',
+		position: 'Product Engineer',
 		isReady: true,
 	},
 	{
@@ -68,7 +75,7 @@ const projects: IProject[] = [
 		description:
 			'AdaptiBar provides you with nearly every licensed MBE question, from past bar exams, released by the NCBE. This includes the newest release of 200 licensed questions from the NCBE.',
 		link: 'https://www.adaptibar.com/',
-		position: 'Product Developer, Front-end Engineer',
+		position: 'Front-end Engineer',
 		isReady: true,
 	},
 ];
