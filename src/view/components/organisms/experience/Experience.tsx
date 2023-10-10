@@ -19,10 +19,20 @@ interface IJob {
 
 const jobs: IJob[] = [
 	{
+		jobTitle: 'Senior Software Engineer',
+		companyName: 'ScyllaDB',
+		location: 'Warsaw, Poland',
+		dates: 'Oct 2023 - present',
+		responsibilities: [
+			'Building a cloud-native database-as-a-service platform',
+		],
+		link: 'https://www.scylladb.com/',
+	},
+	{
 		jobTitle: 'Lead Full-stack Developer',
 		companyName: 'Andersen Lab',
 		location: 'Warsaw, Poland',
-		dates: 'July 2020 - present',
+		dates: 'July 2020 - Sept 2023',
 		responsibilities: [
 			'Led team of 5 software engineers undertaking the development of 7 front-end applications.',
 			'Engineered development environment and CI/CD processes for 3 cross platform applications using monorepository approach.',
