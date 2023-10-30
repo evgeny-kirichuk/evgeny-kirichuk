@@ -33,7 +33,7 @@ Visit my personal page [kirichuk.me](https://kirichuk.me).
 Here is my [Instagram](https://www.instagram.com/evgeny_kirichuk/) account.
 
 
-Let's talk business? This is my [LinkedIn](https://www.linkedin.com/in/yesjs/) profile.
+Let's talk business? This is my [LinkedIn](https://www.linkedin.com/in/kirichuk/) profile.
 
 
 And don't forget to subscribe to [my blog](https://medium.com/@kirichuk) 🙂.
