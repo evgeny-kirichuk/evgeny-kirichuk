@@ -1,6 +1,6 @@
 ## Talks:
 - 🎤 [Quick start for React projects](https://www.youtube.com/watch?v=beJBLGvkqlc)
-- 🎤 [Cross-platform development with a monorepo](https://www.youtube.com/watch?v=0B84XEP81Ko)
+- 🎤 [Cross-platform development with a monorepo](https://youtu.be/0B84XEP81Ko?t=40)
 
 ## Articles:
 - 📕 [7 Must-Have Features for Any React App](https://medium.com/@kirichuk/7-must-have-features-for-any-react-app-10b086038d9a)
