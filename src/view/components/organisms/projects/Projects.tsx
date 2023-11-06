@@ -22,6 +22,8 @@ const projects: IProject[] = [
 		title: 'ScyllaDB Cloud',
 		kind: 'Database-as-a-Service Platform',
 		link: 'https://www.scylladb.com/product/scylla-cloud/',
+		description:
+			'The industry’s fastest and most powerful fully managed NoSQL DBaaS.',
 		position: 'Product Engineer',
 		isReady: true,
 	},
@@ -29,7 +31,7 @@ const projects: IProject[] = [
 		title: 'Mopla',
 		kind: 'Public Transport App',
 		link: 'https://www.mopla.solutions',
-		description: 'Uber-like application for public transport is Germany',
+		description: 'Uber-like application for public transport is Germany.',
 		position: 'Team Lead Product Engineer',
 		isReady: true,
 	},
@@ -38,17 +40,17 @@ const projects: IProject[] = [
 		kind: 'CRM+ERP',
 		link: 'https://work4all.de',
 		description:
-			'work4all is the multiple award-winning all-in-one software that combines commercial functions, filing of communication and documents, and project management. ',
+			'Work4all is the multiple award-winning all-in-one software that combines commercial functions, filing of communication and documents, and project management.',
 		position: 'Product Engineer',
 		isReady: true,
 	},
 	{
-		title: 'BetCheck',
-		kind: 'Betting Sportsbook',
-		link: 'https://sports.betcheck.com',
+		title: 'LYVY',
+		kind: 'Booking platform and blog',
+		link: 'https://www.lyvy.de',
 		description:
-			'BetCheck operates a comparison platform it has developed, which enables registered users to compare betting odds and the resulting possible payout amounts on online sports bets from various licensed sports betting providers that cooperate with BetCheck in a neutral and free manner.',
-		position: 'Team Lead Front-end Engineer',
+			'Digital Health Startup helping people get medical tests faster and safer. The site allows you to order tests and read useful articles from medical experts.',
+		position: 'Team Lead Product Engineer',
 		isReady: true,
 	},
 	{
