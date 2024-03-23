@@ -18,6 +18,20 @@ interface ICertificate {
 
 const certificates: ICertificate[] = [
 	{
+		title: 'Certified in Cybersecurity (CC)',
+		completed: true,
+		imageUrl: '/certImg/cc.png',
+		link: 'https://www.credly.com/badges/d552c605-f667-4b93-ab35-064106b7f518/public_url',
+		small: false,
+	},
+	{
+		title: 'AWS Certified Developer – Associate',
+		completed: true,
+		imageUrl: '/certImg/aws-dva.png',
+		link: 'https://www.credly.com/badges/906f56b8-564e-4487-92dc-82a52235f920/public_url',
+		small: false,
+	},
+	{
 		title: 'AWS Certified Solutions Architect - Associate',
 		completed: true,
 		imageUrl: '/certImg/aws-saa.png',
